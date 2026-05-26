@@ -84,6 +84,6 @@ Przeanalizuj dodatkowo:
 - `GET /api/posts/:id`
 - `GET /api/admin/stats`
 
-## Materiał dla prowadzącego
+## Linki
 
-- [KONSPEKT_10.md](./KONSPEKT_10.md)
+- [KONSPEKT_10.docx](https://pwsztaredupl-my.sharepoint.com/:w:/g/personal/d_aksamit_atar_edu_pl/IQAOqgM2vKfiQKPqpTijcOs7AYHoUqplQOT5UE7-dPCi3wc?e=upie8j)
