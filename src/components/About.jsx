@@ -5,19 +5,19 @@ const About = () => (
     <h2 className="mb-3">O aplikacji</h2>
     <p>
       <strong>Auth Starter</strong> to kontynuacja projektu z routingu w React.
-      Celem cwiczenia jest dodanie logowania, sesji uzytkownika oraz ochrony
-      widokow.
+      Celem ćwiczenia jest dodanie logowania, sesji użytkownika oraz ochrony
+      widoków.
     </p>
     <p>
-      Starter zostal przygotowany jako material do laboratorium z
+      Starter został przygotowany jako materiał do laboratorium z
       programowania reaktywnego.
     </p>
     <div className="d-flex gap-2">
       <Link to="/" className="btn btn-primary">
-        Strona glowna
+        Strona główna
       </Link>
       <Link to="/posts" className="btn btn-outline-primary">
-        Lista postow
+        Lista postów
       </Link>
     </div>
   </section>

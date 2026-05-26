@@ -85,7 +85,7 @@ const server = http.createServer((request, response) => {
         const user = findByCredentials(body.login, body.password);
 
         if (!user) {
-          sendJson(response, 401, { message: 'Niepoprawny login lub haslo.' });
+          sendJson(response, 401, { message: 'Niepoprawny login lub hasło.' });
           return;
         }
 
@@ -138,7 +138,7 @@ const server = http.createServer((request, response) => {
     }
 
     if (session.user.role !== 'admin') {
-      sendJson(response, 403, { message: 'Brak uprawnien do panelu admina.' });
+      sendJson(response, 403, { message: 'Brak uprawnień do panelu administratora.' });
       return;
     }
 

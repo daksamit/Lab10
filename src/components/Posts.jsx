@@ -19,7 +19,7 @@ const Posts = () => {
     })
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Nie udalo sie pobrac listy postow. Sprawdz autoryzacje.');
+          throw new Error('Nie udało się pobrać listy postów. Sprawdź autoryzację.');
         }
 
         return response.json();
@@ -38,21 +38,21 @@ const Posts = () => {
     <section className="app-panel p-4">
       <div className="d-flex justify-content-between align-items-center mb-3">
         <div>
-          <h2 className="mb-1">Lista postow</h2>
+          <h2 className="mb-1">Lista postów</h2>
           <p className="text-secondary mb-0">
-            Endpoint jest chroniony. Po poprawnym logowaniu token powinien trafic
-            do naglowka <code>Authorization</code>.
+            Endpoint jest chroniony. Po poprawnym logowaniu token powinien trafić
+            do nagłówka <code>Authorization</code>.
           </p>
         </div>
       </div>
 
       {error ? (
-        <div className="alert alert-danger">Blad: {error.message}</div>
+        <div className="alert alert-danger">Błąd: {error.message}</div>
       ) : null}
 
       {!isLoaded ? (
         <div className="d-flex justify-content-center py-5">
-          <div className="spinner-border" role="status" aria-label="Ladowanie" />
+          <div className="spinner-border" role="status" aria-label="Ładowanie" />
         </div>
       ) : null}
 

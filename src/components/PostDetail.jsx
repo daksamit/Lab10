@@ -21,7 +21,7 @@ const PostDetail = () => {
         const data = await response.json();
 
         if (!response.ok) {
-          throw new Error(data.message || 'Nie udalo sie pobrac szczegolow posta.');
+          throw new Error(data.message || 'Nie udało się pobrać szczegółów posta.');
         }
 
         return data;
@@ -39,17 +39,17 @@ const PostDetail = () => {
   return (
     <article className="app-panel p-4">
       <p className="text-uppercase text-primary fw-semibold mb-2">
-        Widok szczegolow
+        Widok szczegółów
       </p>
       <h2 className="mb-3">Post #{id}</h2>
 
       {!isLoaded ? (
         <div className="d-flex justify-content-center py-5">
-          <div className="spinner-border" role="status" aria-label="Ladowanie" />
+          <div className="spinner-border" role="status" aria-label="Ładowanie" />
         </div>
       ) : null}
 
-      {error ? <div className="alert alert-danger">Blad: {error.message}</div> : null}
+      {error ? <div className="alert alert-danger">Błąd: {error.message}</div> : null}
 
       {isLoaded && post ? (
         <>
@@ -58,8 +58,8 @@ const PostDetail = () => {
             <p className="text-secondary mb-0">{post.text}</p>
           </div>
           <div className="alert alert-light border">
-            Ten widok tez korzysta z zasobu chronionego i wymaga tokenu w
-            naglowku <code>Authorization</code>.
+            Ten widok też korzysta z zasobu chronionego i wymaga tokenu w
+            nagłówku <code>Authorization</code>.
           </div>
         </>
       ) : null}
@@ -69,7 +69,7 @@ const PostDetail = () => {
         className="btn btn-outline-primary"
         onClick={() => navigate('/posts')}
       >
-        Wroc do listy
+        Wróć do listy
       </button>
     </article>
   );

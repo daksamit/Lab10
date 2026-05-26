@@ -1,27 +1,27 @@
 # Laboratorium 10 - Autentykacja i autoryzacja w React
 
-To repo jest starterem do cwiczenia z logowaniem, sesja uzytkownika oraz ochrona tras w `react-router-dom`. Routing z `Lab9` jest juz przygotowany, a najwazniejsze elementy mechanizmu auth zostaly zostawione jako `TODO`.
+To repozytorium jest starterem do ćwiczenia z logowaniem, sesją użytkownika oraz ochroną tras w `react-router-dom`. Routing z `Lab9` jest już przygotowany, a najważniejsze elementy mechanizmu uwierzytelniania zostały zostawione jako `TODO`.
 
 ## Cel
 
-Po wykonaniu zadania powinienes umiec:
+Po wykonaniu zadania powinieneś umieć:
 
-- obsluzyc logowanie uzytkownika w React
-- zapisac sesje w `localStorage`
-- odczytac aktywna sesje po odswiezeniu strony
-- ograniczyc dostep do tras przez komponent `ProtectedRoute`
-- rozroznic `401 Unauthorized` i `403 Forbidden`
-- ukryc lub pokazac elementy UI zaleznie od roli uzytkownika
-- wylogowac uzytkownika i wyczyscic sesje
+- obsłużyć logowanie użytkownika w React
+- zapisać sesję w `localStorage`
+- odczytać aktywną sesję po odświeżeniu strony
+- ograniczyć dostęp do tras przez komponent `ProtectedRoute`
+- rozróżnić `401 Unauthorized` i `403 Forbidden`
+- ukryć lub pokazać elementy UI zależnie od roli użytkownika
+- wylogować użytkownika i wyczyścić sesję
 
-## Wymagania wstepne
+## Wymagania wstępne
 
-Przed rozpoczeciem laboratorium powinienes rozumiec:
+Przed rozpoczęciem laboratorium powinieneś rozumieć:
 
 - routing z `Lab9`
 - komponenty funkcyjne i hooki `useState`, `useEffect`
 - podstawy `fetch()`
-- dzialanie `localStorage`
+- działanie `localStorage`
 
 ## Start
 
@@ -35,47 +35,47 @@ npm run dev
 
 ## Dane testowe
 
-Uzyj jednego z dwoch kont:
+Użyj jednego z dwóch kont:
 
 - `admin / admin123`
 - `student / student123`
 
-## Co masz zrobic
+## Co masz zrobić
 
-Uzupelnij `TODO` w tych plikach:
+Uzupełnij `TODO` w tych plikach:
 
 - `src/services/auth.js` - odczyt, zapis i usuwanie sesji z `localStorage`
-- `src/components/Login.jsx` - obsluga formularza logowania i zapis sesji po sukcesie
-- `src/components/ProtectedRoute.jsx` - przekierowanie niezalogowanego uzytkownika na `/login` oraz blokada trasy rolowej
+- `src/components/Login.jsx` - obsługa formularza logowania i zapis sesji po sukcesie
+- `src/components/ProtectedRoute.jsx` - przekierowanie niezalogowanego użytkownika na `/login` oraz blokada trasy zależnej od roli
 - `src/components/Navbar.jsx` - warunkowe linki i przycisk `Wyloguj`
-- `src/components/Home.jsx` - wyswietlenie podstawowych informacji o aktualnym uzytkowniku
+- `src/components/Home.jsx` - wyświetlenie podstawowych informacji o aktualnym użytkowniku
 
 Przeanalizuj dodatkowo:
 
-- `src/components/Posts.jsx` i `src/components/PostDetail.jsx` - w jaki sposob token trafia do naglowka `Authorization`
-- `src/components/AdminPanel.jsx` - jak wyglada widok tylko dla roli `admin`
-- `mock-api/server.js` - jak backend rozroznia `401` i `403`
+- `src/components/Posts.jsx` i `src/components/PostDetail.jsx` - w jaki sposób token trafia do nagłówka `Authorization`
+- `src/components/AdminPanel.jsx` - jak wygląda widok tylko dla roli `admin`
+- `mock-api/server.js` - jak backend rozróżnia `401` i `403`
 
-## Kolejnosc pracy
+## Kolejność pracy
 
-1. Uruchom projekt i sprawdz, ktore widoki dzialaja od razu, a ktore zwracaja `TODO` lub blad autoryzacji.
+1. Uruchom projekt i sprawdź, które widoki działają od razu, a które zwracają `TODO` lub błąd autoryzacji.
 2. Zaimplementuj helpery w `src/services/auth.js`.
-3. Uzupelnij logowanie w `src/components/Login.jsx`.
-4. Dodaj ochrone tras w `src/components/ProtectedRoute.jsx`.
-5. Uzupelnij `Navbar.jsx`, aby reagowal na stan sesji.
-6. Dopracuj `Home.jsx`, aby po zalogowaniu pokazywal dane aktywnego uzytkownika.
+3. Uzupełnij logowanie w `src/components/Login.jsx`.
+4. Dodaj ochronę tras w `src/components/ProtectedRoute.jsx`.
+5. Uzupełnij `Navbar.jsx`, aby reagował na stan sesji.
+6. Dopracuj `Home.jsx`, aby po zalogowaniu pokazywał dane aktywnego użytkownika.
 7. Przetestuj scenariusze dla roli `student` i `admin`.
 
-## Jak sprawdzic wynik
+## Jak sprawdzić wynik
 
-- wejscie na `/` bez sesji przekierowuje na `/login`
-- poprawne logowanie zapisuje sesje i pozwala wejsc do aplikacji
-- odswiezenie strony nie wylogowuje uzytkownika
-- `/posts` oraz `/posts/:id` dzialaja dopiero po poprawnym logowaniu
-- rola `student` nie ma dostepu do `/admin`
-- rola `admin` ma dostep do `/admin`
-- wylogowanie czysci sesje i blokuje chronione trasy
-- bledny adres, np. `/abc`, pokazuje `404`
+- wejście na `/` bez sesji przekierowuje na `/login`
+- poprawne logowanie zapisuje sesję i pozwala wejść do aplikacji
+- odświeżenie strony nie wylogowuje użytkownika
+- `/posts` oraz `/posts/:id` działają dopiero po poprawnym logowaniu
+- rola `student` nie ma dostępu do `/admin`
+- rola `admin` ma dostęp do `/admin`
+- wylogowanie czyści sesję i blokuje chronione trasy
+- błędny adres, np. `/abc`, pokazuje `404`
 
 ## API
 
@@ -84,6 +84,6 @@ Przeanalizuj dodatkowo:
 - `GET /api/posts/:id`
 - `GET /api/admin/stats`
 
-## Material dla prowadzacego
+## Materiał dla prowadzącego
 
 - [KONSPEKT_10.md](./KONSPEKT_10.md)

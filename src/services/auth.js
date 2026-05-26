@@ -2,19 +2,19 @@ const STORAGE_KEY = 'lab10-auth-session';
 
 export const getCurrentUser = () => {
   // TODO: Pobierz dane sesji z localStorage pod kluczem STORAGE_KEY.
-  // TODO: Jezeli w localStorage nic nie ma, zwroc null.
-  // TODO: Sparsuj JSON i zwroc obiekt sesji.
-  // TODO: Zabezpiecz sie przed bledem JSON.parse() przez try/catch.
+  // TODO: Jeżeli w localStorage nic nie ma, zwróć null.
+  // TODO: Sparsuj JSON i zwróć obiekt sesji.
+  // TODO: Zabezpiecz się przed błędem JSON.parse() przez try/catch.
   return null;
 };
 
 export const saveCurrentUser = (session) => {
-  // TODO: Zapisz session do localStorage przez JSON.stringify().
+  // TODO: Zapisz session do localStorage za pomocą JSON.stringify().
   void session;
 };
 
 export const clearCurrentUser = () => {
-  // TODO: Usun sesje z localStorage.
+  // TODO: Usuń sesję z localStorage.
 };
 
 export const getAuthToken = () => {

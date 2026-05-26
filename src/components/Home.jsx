@@ -5,8 +5,8 @@ const Home = () => (
     <p className="text-uppercase text-primary fw-bold mb-2">Laboratorium 10</p>
     <h1 className="display-5 hero-title fw-bold">Autentykacja i autoryzacja</h1>
     <p className="lead text-secondary mb-4">
-      Projekt rozwija routing z poprzednich zajec i doklada sesje
-      uzytkownika, chronione trasy oraz widok tylko dla roli admin.
+      Projekt rozwija routing z poprzednich zajęć i dodaje sesję
+      użytkownika, chronione trasy oraz widok tylko dla roli administratora.
     </p>
 
     <div className="row g-3 mb-4">
@@ -17,7 +17,7 @@ const Home = () => (
           </p>
           <h2 className="h5">Logowanie</h2>
           <p className="mb-0 text-secondary">
-            Uzupelnij formularz i zapisz sesje po poprawnym logowaniu.
+            Uzupełnij formularz i zapisz sesję po poprawnym logowaniu.
           </p>
         </article>
       </div>
@@ -28,7 +28,7 @@ const Home = () => (
           </p>
           <h2 className="h5">ProtectedRoute</h2>
           <p className="mb-0 text-secondary">
-            Zablokuj dostep do tras prywatnych bez aktywnej sesji.
+            Zablokuj dostęp do tras prywatnych bez aktywnej sesji.
           </p>
         </article>
       </div>
@@ -39,7 +39,7 @@ const Home = () => (
           </p>
           <h2 className="h5">Role</h2>
           <p className="mb-0 text-secondary">
-            Ogranicz panel admina tylko dla roli <code>admin</code>.
+            Ogranicz panel administratora tylko do roli <code>admin</code>.
           </p>
         </article>
       </div>
@@ -47,23 +47,23 @@ const Home = () => (
 
     <div className="alert alert-info mb-4">
       <p className="mb-2">
-        TODO: Odczytaj aktualna sesje z <code>src/services/auth.js</code> i
-        pokaz tutaj imie oraz role zalogowanego uzytkownika.
+        TODO: Odczytaj aktualną sesję z <code>src/services/auth.js</code> i
+        pokaż tutaj imię oraz rolę zalogowanego użytkownika.
       </p>
       <p className="mb-0">
-        Jezeli sesja nie istnieje, wyswietl komunikat zachecajacy do logowania.
+        Jeżeli sesja nie istnieje, wyświetl komunikat zachęcający do logowania.
       </p>
     </div>
 
     <div className="d-flex flex-wrap gap-2">
       <Link to="/login" className="btn btn-primary">
-        Przejdz do logowania
+        Przejdź do logowania
       </Link>
       <Link to="/posts" className="btn btn-outline-primary">
-        Zasob chroniony
+        Zasób chroniony
       </Link>
       <Link to="/admin" className="btn btn-outline-dark">
-        Panel admina
+        Panel administratora
       </Link>
     </div>
   </section>

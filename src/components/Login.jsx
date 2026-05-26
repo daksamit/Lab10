@@ -39,14 +39,14 @@ const Login = () => {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.message || 'Nie udalo sie zalogowac.');
+        throw new Error(data.message || 'Nie udało się zalogować.');
       }
 
-      // TODO: Zapisz wynik logowania przez saveCurrentUser(data).
+      // TODO: Zapisz wynik logowania za pomocą saveCurrentUser(data).
       saveCurrentUser(data);
 
-      // TODO: Po poprawnym logowaniu przekieruj uzytkownika na poprzednia trase
-      // z location.state?.from?.pathname albo domyslnie na "/".
+      // TODO: Po poprawnym logowaniu przekieruj użytkownika na poprzednią trasę
+      // z location.state?.from?.pathname albo domyślnie na "/".
       navigate(location.state?.from?.pathname || '/');
     } catch (fetchError) {
       setError(fetchError.message);
@@ -58,10 +58,10 @@ const Login = () => {
   return (
     <section className="app-panel auth-card p-4 p-md-5">
       <p className="text-uppercase text-primary fw-bold mb-2">Logowanie</p>
-      <h1 className="h2 mb-3">Autentykacja uzytkownika</h1>
+      <h1 className="h2 mb-3">Uwierzytelnianie użytkownika</h1>
       <p className="text-secondary mb-4">
-        Formularz komunikuje sie z mock API. Po sukcesie powinien zapisac sesje
-        i odblokowac trasy chronione.
+        Formularz komunikuje się z mock API. Po sukcesie powinien zapisać sesję
+        i odblokować chronione trasy.
       </p>
 
       <form onSubmit={handleSubmit} className="mb-4">
@@ -82,7 +82,7 @@ const Login = () => {
 
         <div className="mb-3">
           <label htmlFor="password" className="form-label">
-            Haslo
+            Hasło
           </label>
           <input
             id="password"
@@ -110,7 +110,7 @@ const Login = () => {
               login: <code>student</code>
             </p>
             <p className="mb-0">
-              haslo: <code>student123</code>
+              hasło: <code>student123</code>
             </p>
           </article>
         </div>
@@ -121,7 +121,7 @@ const Login = () => {
               login: <code>admin</code>
             </p>
             <p className="mb-0">
-              haslo: <code>admin123</code>
+              hasło: <code>admin123</code>
             </p>
           </article>
         </div>

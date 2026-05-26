@@ -14,7 +14,7 @@ const Navbar = () => (
         <NavLink to="/posts" className={getNavClassName}>
           Posty
         </NavLink>
-        {/* TODO: Pokaz link do "/admin" tylko dla roli admin. */}
+        {/* TODO: Pokaż link do "/admin" tylko dla roli administratora. */}
         <NavLink to="/admin" className={getNavClassName}>
           Admin
         </NavLink>
@@ -23,8 +23,8 @@ const Navbar = () => (
         </NavLink>
       </div>
       <div className="d-flex align-items-center gap-2">
-        {/* TODO: Dla zalogowanego uzytkownika wyswietl imie, role i przycisk Wyloguj. */}
-        {/* TODO: Dla niezalogowanego uzytkownika zostaw tylko link do /login. */}
+        {/* TODO: Dla zalogowanego użytkownika wyświetl imię, rolę i przycisk Wyloguj. */}
+        {/* TODO: Dla niezalogowanego użytkownika zostaw tylko link do /login. */}
         <span className="badge rounded-pill text-bg-light text-primary">
           TODO: aktywna sesja
         </span>
