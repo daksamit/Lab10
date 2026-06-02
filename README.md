@@ -87,3 +87,4 @@ Przeanalizuj dodatkowo:
 ## Linki
 
 - [KONSPEKT_10.docx](https://pwsztaredupl-my.sharepoint.com/:w:/g/personal/d_aksamit_atar_edu_pl/IQAOqgM2vKfiQKPqpTijcOs7AYHoUqplQOT5UE7-dPCi3wc?e=upie8j)
+- [Przestrzeń OneDrive](https://pwsztaredupl-my.sharepoint.com/:f:/g/personal/d_aksamit_atar_edu_pl/IgBgY_8KvVXIS5T4PcUEnFdLAZBLT9hqNIzcrYvT0jVgbB8?e=nn6RRc) do oddania zadań z laboratorium
